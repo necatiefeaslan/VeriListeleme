@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Başlık adı -->
+    <TextView
+        android:id="@+id/tvDetailName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Numara bilgisi -->
+    <TextView
+        android:id="@+id/tvDetailNumber"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#4CAF50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Not bilgisi -->
+    <TextView
+        android:id="@+id/tvDetailNote"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#2196F3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Performans bilgisi -->
+    <TextView
+        android:id="@+id/tvDetailPerformance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="#FF5722" />
+
+    <!-- Geri dönme butonu -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:text="GERİ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.Button" />
+</LinearLayout>

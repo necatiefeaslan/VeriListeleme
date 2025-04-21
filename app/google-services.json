@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "225888800832",
+    "project_id": "verilisteleme",
+    "storage_bucket": "verilisteleme.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225888800832:android:a7da7499e1f8cb26534fa5",
+        "android_client_info": {
+          "package_name": "tr.com.example.verilisteleme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2yN7kEozkm1pLDu-GObv2TPgR3QOkMPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
