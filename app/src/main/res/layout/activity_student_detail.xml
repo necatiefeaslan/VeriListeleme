@@ -5,48 +5,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Başlık adı -->
-    <TextView
-        android:id="@+id/tvDetailName"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etDetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ad Soyad"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp" />
 
-    <!-- Numara bilgisi -->
-    <TextView
-        android:id="@+id/tvDetailNumber"
-        android:textSize="18sp"
-        android:layout_marginTop="8dp"
-        android:textColor="#4CAF50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etDetailNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numara"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp" />
 
-    <!-- Not bilgisi -->
-    <TextView
-        android:id="@+id/tvDetailNote"
-        android:textSize="18sp"
-        android:layout_marginTop="8dp"
-        android:textColor="#2196F3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etDetailNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Not (0-100)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp"
+        android:maxLength="5"
+        android:textSize="20sp" />
 
-    <!-- Performans bilgisi -->
-    <TextView
-        android:id="@+id/tvDetailPerformance"
+    <EditText
+        android:id="@+id/etDetailPerformance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Performans (0-100)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:maxLength="5"
+        android:textSize="20sp" />
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="18sp"
-        android:textColor="#FF5722" />
+        android:orientation="horizontal"
+        android:gravity="center">
 
-    <!-- Geri dönme butonu -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GÜNCELLE"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEMİZLE" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="GERİ"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        style="@style/Widget.MaterialComponents.Button" />
+        android:layout_marginTop="8dp" />
+
 </LinearLayout>
